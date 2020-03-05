@@ -1,0 +1,6 @@
+{
+  "title": "Krótszy sposób zapisu reduxowego mapDispatchToProps",
+  "badExample": "const mapDispatchToProps = dispatch =>\n\tbindActionCreators(\n\t\t{\n\t\t\tgetUserDetails,\n\t\t\tfetchPhotos\n\t\t},\n\t\tdispatch\n\t);",
+  "goodExample": "const mapDispatchToProps = {\n\tgetUserDetails,\n\tfetchPhotos\n};",
+  "description": "Jako mapDispatchToProps nie musimy przekazywać wywołań tych wszystkich funkcji - aktualnie Redux poradzi sobie jeżeli przekażemy po prostu obiekt zawierający referencje do kreatorów akcji."
+}

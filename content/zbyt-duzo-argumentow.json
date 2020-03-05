@@ -1,0 +1,6 @@
+{
+  "title": "Zbyt dużo argumentów przekazywanych do funkcji",
+  "badExample": "renderElement('button', parentNode, 'btn-danger', false, { textAlign: 'center' }) {",
+  "goodExample": "renderElement({\n\ttype: 'button',\n\tparent: parentNode,\n\tclassName: 'btn-danger',\n\tdisabled: false,\n\tstyle: { textAlign: 'center' }\n});",
+  "description": "Przekazywanie zbyt dużej liczby argumentów bez użycia wzorca pokazanego w przykładzie po prawej stronie generuje kilka problemów. Po pierwsze, wystarczy, że ktoś w deklaracji funkcji wrzuci kolejny argument pomiędzy dwa inne - wtedy zmienia się całkowicie ich kolejność i możemy być pewni, że funkcja się wysypie. Stosując drugi sposób kolejność przekazywania parametrów jest dowolna, poza tym zyskujemy przewagę w postaci większej czytelności - dokładnie wiemy co oznacza dany parametr. Generalnie można uznać, że powyższy pattern warto stosować dla funkcji, które przyjmują więcej niż 2-3 argumenty/lub istnieje bardzo duża szansa, że będzie przyjmować."
+}

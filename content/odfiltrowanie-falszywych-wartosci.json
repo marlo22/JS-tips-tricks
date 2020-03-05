@@ -1,0 +1,6 @@
+{
+  "title": "Odfiltrowanie fałszywych wartości",
+  "badExample": "const arr = ['something', 0, null, true, 20]\nconst truthyVals = arr.filter(val => val); // ['something', true, 20]",
+  "goodExample": "const arr = ['something', 0, null, true, 20]\nconst truthyVals = arr.filter(Boolean); // ['something', true, 20]",
+  "description": "Oczywiście w pierwszym przykładzie nie ma nic złego i jest on jak najbardziej poprawny. Drugi pokazuje ciekawe podejście do rozwiązania tego samego problemu."
+}

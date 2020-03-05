@@ -1,0 +1,8 @@
+div.col-2
+  ul.nav.flex-column
+    each file in contentFiles
+      li.nav-item
+        if file === currentChapter
+          a.nav-link.active(href=file) #{file}
+        else
+          a.nav-link(href=file) #{file}

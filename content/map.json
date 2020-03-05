@@ -1,0 +1,6 @@
+{
+  "title": "Pętla map",
+  "badExample": "users.map(id => delete activeUsers[id]); // [true, true, true, ...]",
+  "goodExample": "const usersId = users.map(({ id }) => id); // [1, 2, 3, 4, 5, ...]",
+  "description": "Pętla ta służy do mapowania tablicy z nowymi wartościami. Wykonywana jest dla wszystkich elementów, nie da się jej zatrzymać „w trakcie”, nie „pauzuje się” dla async/await. Powinniśmy korzystać z niej tylko wtedy, gdy chcemy „przerobić” KAŻDY element tablicy na nową wartość. Ta funkcja nie służy do obsługiwania różnego rodzaju side-effectów, typu kasowanie pola z obiektu (dla takich przypadków stosujemy forEach)."
+}

@@ -1,0 +1,28 @@
+html
+  include includes/head
+  body
+    div.container-fluid
+      p.h2.text-center.mt-2.mb-2 #{title}
+      div.row
+        include includes/nav
+        div.col-10
+          if badExample && goodExample
+            div.card
+              div.card-body.example-container
+                div.example-column
+                  span.thumbs-icon 👎
+                  pre
+                    code.javascript #{badExample}
+                div.example-column
+                  span.thumbs-icon 👍
+                  pre
+                    code.javascript #{goodExample}
+          if example
+                div
+                  pre
+                    code.javascript #{example}
+          if description
+            div.card.example-description.mt-3
+              div.card-body
+                p.h4 O co chodzi?
+                span #{description}

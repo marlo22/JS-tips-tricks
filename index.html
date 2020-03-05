@@ -1,0 +1,41 @@
+<!doctype html>
+<head>
+  <title>Dobre praktyki - JavaScript</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<script>
+  var content = [
+    {
+      title: 'Korzystanie z natywnych metod',
+      badExample: 'import _ from \'lodash\'\n_.isArray(value)',
+    }
+  ]
+</script>
+<body>
+  <h1>
+    <script>document.write(content[0].title)</script>
+  </h1>
+  <div style="display: flex; justify-content: space-around;">
+    <div style="width: 45%;">
+      <h2>Źle</h2>
+      <pre>
+        <code class="javascript">
+import _ from 'lodash';
+
+_.isArray(value);
+        </code>
+      </pre>
+    </div>
+    <div style="width: 45%;">
+      <h2>Dobrze</h2>
+        <pre>
+          <code class="javascript">      
+            Array.isArray(value);
+          </code>
+        </pre>
+      </div>
+  </div>
+</body>
+</html>

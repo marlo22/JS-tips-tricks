@@ -1,0 +1,6 @@
+{
+  "title": "Zbędny ternary operator - wartość logiczna",
+  "badExample": "hasNewMessages = user.unreadMessages > 0 ? true : false;",
+  "goodExample": "hasNewMessages = user.unreadMessages > 0;",
+  "description": "Nie ma potrzeby rozpisywania takiego wyrażenia na true lub false, bo równanie samo z siebie zwróci odpowiednią wartość logiczną."
+}

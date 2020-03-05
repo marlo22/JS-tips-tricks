@@ -1,0 +1,6 @@
+{
+  "title": "Deep copy",
+  "badExample": "const fruits = [{ id: 1, name: 'Apple' }, { id: 2, name: 'Orange' }];\nconst fruitsCopy = [...fruits];",
+  "goodExample": "const fruits = [{ id: 1, name: 'Apple' }, { id: 2, name: 'Orange' }];\nconst fruitsCopy = JSON.parse(JSON.stringify(fruits));",
+  "description": "Destrukturyzacja jedynie „rozpakowuje” iterowalny obiekt, nie dokonuje kopii zawartości - wrzuca do nowego obiektu jedynie referencje do innych obiektów."
+}

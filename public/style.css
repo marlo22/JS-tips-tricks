@@ -1,0 +1,23 @@
+.nav-link.active {
+  font-weight: bold;
+}
+
+.example-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.example-column {
+  width: 45%;
+}
+
+.example-description {
+  width: 100%;
+}
+
+.thumbs-icon {
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 1rem;
+}

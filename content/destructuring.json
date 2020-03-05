@@ -1,0 +1,6 @@
+{
+  "title": "Destrukturyzacja parametru",
+  "badExample": "const usersId = users.map(user => user.id);\n\nfunction getUsers(config) {\n\t const { role, isActive } = config\n\b};",
+  "goodExample": "const usersId = users.map(({ id }) => id);\n\nfunction getUsers({ role, isActive }) {",
+  "description": "Możemy przypisywać każdy parametr iterowanego obiektu do zmiennej (przydatne zwłaszcza w sytuacji, gdy kilka razy odwołujemy się do zmiennej)."
+}

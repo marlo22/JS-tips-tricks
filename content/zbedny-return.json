@@ -1,0 +1,6 @@
+{
+  "title": "Zbędny return przy użyciu arrow functions",
+  "badExample": "const usersId = users.map(({ id }) => {\n\treturn id;\n\b});",
+  "goodExample": "const usersId = users.map(({ id }) => id);",
+  "description": "Jeśli wewnątrz funkcji callback nie wykonujemy żadnych skomplikowanych obliczeń wymagających wywołania innych funkcji lub deklaracji zmiennych, możemy skrócić zapis przez ominięcie return."
+}

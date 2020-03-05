@@ -1,0 +1,6 @@
+{
+  "title": "Importowanie pakietów w całości",
+  "badExample": "import _ from 'lodash';\n\nconst isBoolType = _.isBool(valueToCheck);",
+  "goodExample": "import isBool from 'lodash/isBool'\n\nconst isBoolType = isBool(valueToCheck);",
+  "description": "Konsekwentnie stosując to podejście możemy znacząco zmniejszyć rozmiar bundle'a. Powinniśmy importować tylko te funkcje z danego pakietu, których używamy (o ile dostępna jest taka możliwość). Przydatnym dodatkiem wizualizującym oszczędności jest np. wtyczka do VSCode o nazwie \"Import Cost\""
+}

@@ -1,0 +1,4 @@
+{
+  "title": "Usuwanie elementu z tablicy",
+  "example": "const arr = [1, 2, 3, 4, 5, 6];\nconst newArr = arr.filter(item => item !== 4); // [1, 2, 3, 5, 6]"
+}

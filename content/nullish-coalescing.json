@@ -1,0 +1,6 @@
+{
+  "title": "Nullish coalescing",
+  "badExample": "const myValue = val !== null && val !== undefined ? val : 'value is empty!';",
+  "goodExample": "const myValue = val ?? 'value is empty!';",
+  "description": "Operator sprawdza czy przekazana wartość jest pusta (tzn. czy jest \"null\" lub \"undefined\"). Jeśli tak zwracana jest prawa strona porównania, a jeśli nie - lewa."
+}

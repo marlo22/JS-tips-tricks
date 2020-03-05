@@ -1,0 +1,6 @@
+{
+  "title": "Zbędny ternary operator",
+  "badExample": "const userData = props.user ? props.user : {};",
+  "goodExample": "const userData = props.user || {};",
+  "description": "Można krócej... ;)"
+}

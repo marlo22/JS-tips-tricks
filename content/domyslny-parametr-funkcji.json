@@ -1,0 +1,6 @@
+{
+  "title": "Domyślny parametr funkcji.",
+  "badExample": "function getName(name) {\n\t return name || 'Bob'; \n\b}",
+  "goodExample": "function getName(name = 'Bob') {\n\t return name; \n\b}",
+  "description": "ES6 daje możliwość ustawiania domyślnych wartości dla parametrów funkcji. Niestety, ten sposób nie zadziała dla komponentów Reacta sprawdzanych przez bibliotekę PropTypes - trzeba podać defaultProps."
+}

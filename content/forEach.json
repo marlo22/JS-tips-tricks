@@ -1,0 +1,6 @@
+{
+  "title": "Pętla forEach",
+  "badExample": "const usersId = users.forEach(({ id }) => id); // undefined",
+  "goodExample": "users.forEach(({ id, isActive }) => { delete inactiveUsers[id]; })",
+  "description": "Pętla ta służy do tylko i wyłącznie iterowania po tablicy. Nie zwraca ona żadnej wartości i wykonuje się dla wszystkich elementów. Nie da się jej zatrzymać dopóki przeiteruje wszystkich elementów. Dodatkowo, wewnątrz nie można skorzystać z await (pętla wykona kod, ale się nie zatrzyma, więc wynik dostaniemy za późno)."
+}

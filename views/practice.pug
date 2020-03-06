@@ -4,8 +4,9 @@ html
     div.container-fluid
       p.h2.text-center.mt-2.mb-2 #{title}
       div.row
+        button.btn.btn-primary.btn-sm#toggleNav Nawigacja
         include includes/nav
-        div.col-10
+        div.col-10#contentBox
           if badExample && goodExample
             div.card
               div.card-body.example-container
@@ -26,3 +27,4 @@ html
               div.card-body
                 p.h4 O co chodzi?
                 span #{description}
+  script(src="/scripts.js")

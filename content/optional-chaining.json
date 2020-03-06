@@ -1,0 +1,6 @@
+{
+    "title": "Optional chaining",
+    "badExample": "const arr = [{\n\tid: 1,\n\ttype: 'Apple'\n\teat: () => console.log('Omnomnom')\n}];\n\nconst name = arr[0] && arr[0].type;\narr[0] && arr[0].eat && arr[0].eat()",
+    "goodExample": "const arr = [{\n\tid: 1,\n\ttype: 'Apple'\n\teat: () => console.log('Omnomnom')\n}];\n\nconst name = arr[0]?.type\narr[0]?.eat?.()",
+    "description": "Nowy operator wprowadzony w ES2020 umożliwiający sprawne sprawdzanie czy zagnieżdżone wartości istnieją. W przypadku, gdy na jakimś etapie sprawdzania łańcucha któraś wartość okaże się pusta, zostanie zwrócone undefined."
+  }

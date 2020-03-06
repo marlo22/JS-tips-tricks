@@ -1,6 +1,0 @@
-{
-  "title": "Pętla find",
-  "badExample": "deletedUsers.find(id => delete usersToDelete[id]);",
-  "goodExample": "const secondUser = users.find(({ id }) => id === 2); // { id: 2, name: 'John' }",
-  "description": "Pętla ta służy do wyszukiwania elementów w tablicy. Wykonywana jest do momentu znalezienia pierwszego wyniku, który spełni warunek. Podobnie jak inne, nie „pauzuje się” dla async/await. Zwraca znaleziony element."
-}
